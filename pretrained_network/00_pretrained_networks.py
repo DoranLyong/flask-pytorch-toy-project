@@ -40,7 +40,7 @@ preprocess = transforms.Compose([   transforms.Resize(256),
 
 
 imgPath = osp.join(osp.abspath(""), "sample_data", "dog_sample.jpg" )
-img = Image.open(imgPath)
+img = Image.open(imgPath) # 이미지 불러오기 
 
 
 img_t = preprocess(img)  # Image transformation 
